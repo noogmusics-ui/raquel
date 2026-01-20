@@ -1,0 +1,290 @@
+/* Ultra-optimized CSS for Back Redirect */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #fff;
+    color: #2d2d2d;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+/* Profile Image */
+.profile {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile img {
+    max-width: 240px;
+    height: auto;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .profile img {
+        max-width: 220px;
+    }
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.sub {
+    font-size: 1.05rem;
+    color: #666;
+}
+
+/* Timer */
+.timer-box {
+    background: #fff5f9;
+    border: 2px solid #ffd4e8;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.timer {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #ff6fae;
+    font-variant-numeric: tabular-nums;
+}
+
+.timer.expired {
+    color: #999;
+}
+
+.timer-label {
+    font-size: 0.85rem;
+    color: #999;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+}
+
+/* Pricing */
+.pricing {
+    background: #fff5f9;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ffd4e8;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 0.75rem;
+}
+
+.price-item:last-child {
+    margin-bottom: 0;
+}
+
+.price-item span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.price-item strong {
+    font-size: 1.4rem;
+    color: #2d2d2d;
+}
+
+.price-item.old strong {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1.15rem;
+}
+
+.price-item.pix strong {
+    color: #ff6fae;
+}
+
+.price-item.final {
+    background: linear-gradient(135deg, #ff6fae, #ff9fcf);
+}
+
+.price-item.final span,
+.price-item.final strong {
+    color: #fff;
+}
+
+.price-item.final strong {
+    font-size: 1.9rem;
+}
+
+/* CTA */
+.cta {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 1.3rem 2rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6fae, #ff9fcf);
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:disabled {
+    background: #e0e0e0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+#expired {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#expired p {
+    color: #999;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 0.85rem 1.75rem;
+    color: #666;
+    background: #fff;
+    border: 1px solid #ffd4e8;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Benefits */
+.benefits {
+    list-style: none;
+    background: #fff5f9;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.benefits li {
+    font-size: 0.95rem;
+    color: #666;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+
+.benefits li:last-child {
+    margin-bottom: 0;
+}
+
+.benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #ff6fae;
+    font-weight: 700;
+}
+
+/* Social Proof */
+.social {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: #ffe9f3;
+    border: 1px solid #ffd4e8;
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Guarantee */
+.guarantee {
+    text-align: center;
+    padding: 1rem;
+    background: #fff5f9;
+    border-radius: 16px;
+    border: 1px solid #ffd4e8;
+    margin-bottom: 2rem;
+}
+
+.guarantee p {
+    font-size: 0.95rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.8rem;
+    color: #999;
+    border-top: 1px solid #ffd4e8;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    body {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .sub {
+        font-size: 1.15rem;
+    }
+
+    .timer {
+        font-size: 3.5rem;
+    }
+
+    .social {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
